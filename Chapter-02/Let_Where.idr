@@ -10,3 +10,6 @@ pythagore x y = sqrt (square x + square y)
   where
     square : Double -> Double
     square x = x * x
+
+wordCount : String -> Nat
+wordCount str = length (words str)
