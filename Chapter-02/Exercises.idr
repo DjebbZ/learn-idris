@@ -1,3 +1,5 @@
+module Exercises
+
 {- 1.
 What are the types of the following values?
 ("A", "B", "C")
