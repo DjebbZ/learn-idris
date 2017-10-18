@@ -11,3 +11,12 @@ xor True y = not y
 isEven : Nat -> Bool
 isEven Z = True
 isEven (S k) = not (isEven k)
+
+mutual
+  is_even : Nat -> Bool
+  is_even Z = True
+  is_even (S k) = is_odd k
+
+  is_odd : Nat -> Bool
+  is_odd Z = False
+  is_odd (S k) = is_even k
